@@ -1,0 +1,76 @@
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #111111;
+    left: -200px;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.selected{
+    border: 1px solid black;
+}
+/*toggle - button*/
+#sidebar .toggle1{
+    position: absolute;
+    left: 210px;
+    top: 10px;
+    cursor: pointer;
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 3px 0px;
+}
+
+
+/*link*/
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #524f4f;
+    margin: 0px;
+  }
+  #sidebar a:hover {
+    color: #f1f1f1;
+    -moz-box-shadow:    inset 0 0 10px #e6d5d5;
+    -webkit-box-shadow: inset 0 0 10px #ecd1d1;
+    box-shadow:         inset 0 0 10px #ccb8b8;
+  }
+  
+  /*main - body*/
+  #main {
+    transition: margin-left .5s;
+  }
+
+  #sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /*image*/
+  .avatar {
+    border:1px solid whitesmoke;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
